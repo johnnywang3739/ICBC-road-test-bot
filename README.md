@@ -31,7 +31,7 @@ GMAIL_RECEIVER_ADDRESS="RECEIVER_EMAIL@gmail.com"
 
 ## Usage
 
-For now, it only support getting the appointments in **Point Grey**
+It supports any location, by modifying the locations in icbc-appointment.py. For example **Point Grey**:
 ```python
 point_grey = {
     "aPosID": 9,
