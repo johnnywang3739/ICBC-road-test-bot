@@ -12,21 +12,21 @@ pip install PyYAML requests
 
 ## Config
 
-Create the yaml file `./config.yml`
+create a .env file in the root directory to store your configuration values, such as ICBC credentials and Gmail details. `./config.yml`
 ```yaml
-icbc:
-  drvrLastName: "YOUR_LAST_NAME"
-  licenceNumber: "YOUR_LICENCE_NUMBER"
-  keyword: "KEYWORD"
-  expactAfterDate: "2022-02-01" #YYYY-MM-DD
-  expactBeforeDate: "2022-04-01" #YYYY-MM-DD
-  expactAfterTime: "09:00" #HH:MM
-  expactBeforeTime: "11:30" #HH:MM
-  examClass: 5 #5/7
-gmail:
-  sender_address: "SENDER_EMAIL@gmail.com"
-  sender_pass: "YOUR_EMAIL_PASSWORD"
-  receiver_address: "RECEIVER_EMAIL@gmail.com"
+# .env file
+ICBC_LASTNAME="YOUR_LAST_NAME"
+ICBC_LICENCENUMBER="YOUR_LICENCE_NUMBER"
+ICBC_KEYWORD="KEYWORD"
+ICBC_EXPECT_AFTERDATE="2024-07-13"  # YYYY-MM-DD
+ICBC_EXPECT_BEFOREDATE="2024-08-31"  # YYYY-MM-DD
+ICBC_EXPECT_AFTERTIME="07:00"  # HH:MM
+ICBC_EXPECT_BEFORETIME="17:30"  # HH:MM
+ICBC_EXAMCLASS=7  # 5/7
+
+GMAIL_SENDER_ADDRESS="SENDER_EMAIL@gmail.com"
+GMAIL_SENDER_PASS="YOUR_EMAIL_PASSWORD"
+GMAIL_RECEIVER_ADDRESS="RECEIVER_EMAIL@gmail.com"
 ```
 
 ## Usage
