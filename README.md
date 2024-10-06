@@ -2,17 +2,17 @@
 
 Robot for checking ICBC road test appointments.
 
-## Installation
+### Usage
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install dependences.
-
-```bash
-pip install PyYAML requests
+Make sure the .env file is properly configured with your ICBC and Gmail credentials.
+To start scraping for ICBC appointments, run checker_bot.py. This script will automatically check for appointments every few minutes and send an email if earlier slots are found.
+Execute the following command to run the bot:
+```python
+python checker_bot.py
 ```
-
 ## Config
 
-create a .env file in the root directory to store your configuration values, such as ICBC credentials and Gmail details. `./config.yml`
+create a .env file in the root directory to store your configuration values, such as ICBC credentials and Gmail details. `./.env`
 ```yaml
 # .env file
 ICBC_LASTNAME="YOUR_LAST_NAME"
@@ -60,5 +60,5 @@ point_grey = {
 ## Contributing
 Feel free to contribute.
 
-1. Able to change location (Now: only Point Grey)
+1. Able to change location
 2. Able to choose Day of week
